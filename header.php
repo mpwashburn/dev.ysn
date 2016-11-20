@@ -24,7 +24,7 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'ysn' ); ?></a>
 
 	<header id="masthead" class="site-header" role="banner">
-		
+
             <?php // Display site icon or first letter as logo ?>
                 <div class="site-logo">
                     <?php $site_title = get_bloginfo( 'name' ); ?>
@@ -41,7 +41,7 @@
                         <?php } ?>
                     </a>
                 </div>
-                
+
             <!-- site-branding class is followed with conditional statement to only show site-title and description on homepage, or singular page-->
             <div class="site-branding<?php if ( is_singular() ) { echo ' screen-reader-text'; } ?>">
 			<?php
