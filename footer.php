@@ -14,14 +14,13 @@
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
-		<div class="site-info entry-footer">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'ysn' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'ysn' ), 'WordPress' ); ?></a>
-			<span class="sep"> | </span>
-			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'ysn' ), 'ysn', '<a href="http://www.ysn.com" rel="designer">Michael Washburn</a>' ); ?>
+		<div class="site-info">
+                    <?php get_template_part('template-parts/content', 'footer') ?>
+                    
+			
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
-
 <?php wp_footer(); ?>
 
 </body>
