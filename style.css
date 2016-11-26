@@ -1199,6 +1199,18 @@ a:active {
 .content-footer a {
     padding: .27777778em;
 }
+
+.footer-bottom {
+    background-color: #6D6E70;
+}
+
+.footer-bottom p {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 75%;
+    color: #fff;
+}
 /*--------------------------------------------------------------
 # Widgets
 --------------------------------------------------------------*/

@@ -7,3 +7,4 @@
         <a href="#"><img class="img-responsive" src="<?php bloginfo('template_directory'); ?>/images/iconmonstr-instagram-14-32.png"></a>
         <a href="#"><img class="img-responsive" src="<?php bloginfo('template_directory'); ?>/images/iconmonstr-twitter-4-32.png"></a>
     </p></div>
+<div class="footer-bottom"><p>Copyright 2016-2017 Young & Successful Media LLC.</p></div>
