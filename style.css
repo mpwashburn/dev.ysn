@@ -1682,7 +1682,7 @@ a:active {
 }
 
 .entry-title.index-excerpt {
-    margin-top: 2em;
+    margin-top: 0.5em;
     margin-bottom: .5em;
     font-size: 1.5em;
 }
@@ -1697,7 +1697,7 @@ a:active {
 
 @media screen and (min-width: 30em) {
     .entry-title.index-excerpt {
-        margin-top: 1.5em;
+        margin-top: 0.5em;/*changed from 1.5em*/
         font-size: 2em;
     }
 
@@ -1830,7 +1830,7 @@ a:active {
 }
 
 .entry-title {
-  margin-top: 2em;
+  margin-top: 0.5em;/*changed from 2em*/
   margin-bottom: 1em;
   font-size: 2em;
   line-height: 1.3em;
@@ -1841,7 +1841,7 @@ a:active {
 
 @media screen and (min-width: 40em) {
   .entry-title {
-    margin-top: 1.5em;
+    margin-top: 0.5em;/*changed from 1.5em*/
     font-size: 2.8em;
     line-height: 1.3em;
   }
@@ -1973,13 +1973,15 @@ a:active {
 .deck,
 .entry-content {
   margin: 1.5em 0 0;
+  padding-top: 5em;
 }
 
 @media screen and (min-width: 50em) {
 
   .deck,
   .entry-content {
-    padding: 0 3em;
+    padding: 5em 3em 0; /*changed from 0 3em*/
+    padding-top: 5em; /*added*/
   }
 }
 
@@ -2048,6 +2050,16 @@ a:active {
     .col-1, .col-2, .col-3 {
         width: 100%;
     }
+}
+
+/*Adding in styleing to page template*/
+.title-background {
+    position: absolute;
+    left: 1em;
+    right: 1em;
+    height: 100px;
+    background-color: rgba(241, 91, 40, .75);
+    margin-top: -1em;
 }
 
 /*--------------------------------------------------------------

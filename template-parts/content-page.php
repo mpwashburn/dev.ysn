@@ -19,8 +19,9 @@
 			</figure>
 		<?php }
 		?>
-            
+            <div class="title-background">
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+            </div>
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
