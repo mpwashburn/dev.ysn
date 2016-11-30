@@ -590,7 +590,7 @@ a:active {
   padding: 2em 1em 0 1em;
   /*original*/
   /*padding: 0.8em 1em;*/
-  font-weight: 400;
+  font-weight: 300;
   text-decoration: none;
   line-height: 1.6em;
   color: white;
@@ -598,8 +598,8 @@ a:active {
 
 .main-navigation a:hover,
 .main-navigation a:focus {
-  background: #fff;
-  color: #000;
+  background: #FDBC10;
+  color: #FDBC10;
 }
 
 .main-navigation a,
@@ -1742,7 +1742,7 @@ a:active {
 }
 
 .continue-reading a::after {
-    content: "…"
+    content: ""
 }
 .continue-reading::after {
     display: block;
@@ -2039,7 +2039,7 @@ a:active {
         display: inline-block;
         width: 49%;
     }
-    
+
     .col-3 {
         display: block;
         width: 100%;
@@ -2099,17 +2099,17 @@ cta-card a {
     .cta-card {
         display: inline-block;
     }
-    
+
     .cta-card-1 {
         min-width: 49%;
         float: left;
-        
- 
+
+
     }
     .cta-card-2 {
         min-width: 49%;
         float: right;
-    
+
     }
 }*/
 
@@ -2494,12 +2494,13 @@ img.alignleft {
 
     img.alignright,
     .wp-caption.alignright {
-	margin-right: -1.5em;
+	margin-right: 0; /*was -1.5em*/
     }
 
     img.alignleft,
     .wp-caption.alignleft {
-	margin-left: -1.5em;
+	/*margin-left: -1.5em;*/
+        margin-left: 0;
     }
 
     .centered-image {
@@ -2513,11 +2514,11 @@ img.alignleft {
 @media screen and (min-width: 74em) {
     img.alignright,
     .wp-caption.alignright {
-	margin-right: -3em;
+	margin-right: 0; /*was -3em*/
     }
     img.alignleft,
     .wp-caption.alignleft {
-	margin-left: -3em;
+	margin-left: 0em; /*changed from -3em*/
     }
 }
 
