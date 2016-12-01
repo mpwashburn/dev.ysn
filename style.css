@@ -1181,24 +1181,34 @@ a:active {
 .site-footer {
   background-color: #6D6E70;
   background-size: cover;
-  min-height: 9.333333em;
+  min-height: 6.333333em;
   color: #fff;
   margin-top: 4.5em;
 }
 
 .site-footer a {
     color: #fff;
+    font-family: 'Fira-sans', sans-serif;
+    font-weight: 300;
+}
+
+.site-footer p {
+  margin: 0;
 }
 
 .content-footer {
     text-align: center;
-    /*width: 33%;*/
-    display: inline-block;
+    width: 33.3333333%;
+    float: left;
+    padding: 1em;
+    height: 6.5em;
 }
 
 .content-footer a {
     padding: .27777778em;
 }
+
+
 
 .footer-bottom {
     background-color: #6D6E70;
@@ -1211,6 +1221,26 @@ a:active {
     font-size: 75%;
     color: #fff;
 }
+
+
+
+/*@media screen and (min-width: 640px) {
+    .col-1, .col-2 {
+        display: inline-block;
+        width: 49%;
+    }
+
+    .col-3 {
+        display: block;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 300px ) {
+    .col-1, .col-2, .col-3 {
+        width: 100%;
+    }
+}*/
 /*--------------------------------------------------------------
 # Widgets
 --------------------------------------------------------------*/
@@ -2032,24 +2062,6 @@ a:active {
   font-weight: 700;
   text-decoration: none;
   color: #000;
-}
-
-@media screen and (min-width: 640px) {
-    .col-1, .col-2 {
-        display: inline-block;
-        width: 49%;
-    }
-
-    .col-3 {
-        display: block;
-        width: 100%;
-    }
-}
-
-@media screen and (min-width: 300px ) {
-    .col-1, .col-2, .col-3 {
-        width: 100%;
-    }
 }
 
 /*Adding in styleing to page template*/

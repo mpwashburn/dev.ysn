@@ -15,9 +15,9 @@
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info">
-                    <?php get_template_part('template-parts/content', 'footer') ?>
-                    
-			
+              <?php get_template_part('template-parts/content', 'footer') ?>
+
+
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
