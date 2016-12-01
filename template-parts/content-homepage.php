@@ -4,7 +4,7 @@
 	<div class="ysn-logo">
             <img class=" img-responsive" src="<?php bloginfo('template_directory'); ?>/images/YSN_LogoSignature-01.png">
             <h3>YSN is dramatically changing the conversation about work for the next generation.</h3>
-            <hr>
+            <hr class="frontpage-hr">
         </div>
 
         <div class="ysn-copy">
