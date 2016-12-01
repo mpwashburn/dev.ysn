@@ -477,7 +477,7 @@ button:hover,
 input[type="button"]:hover,
 input[type="reset"]:hover,
 input[type="submit"]:hover {
-  border-color: #000;
+  border-color: #fff;
   color: #fff;
 }
 
@@ -489,7 +489,7 @@ button:active,
 input[type="button"]:active,
 input[type="reset"]:active,
 input[type="submit"]:active {
-  border-color: #000;
+  border-color: #fff;
   color: #fff;
 }
 
@@ -645,15 +645,15 @@ a:active {
 .dropdown-toggle {
   position: absolute;
   height: 27px;
-  width: 27px;
-  top: 12px;
-  right: 6px;
+  width: 19px;
+  top: 21px;
+  right: 25px;
   -webkit-box-sizing: content-box;
   -moz-box-sizing: content-box;
   box-sizing: content-box;
   padding: 0;
   font-family: 'FontAwesome';
-  background-color: #000;
+  background-color: #6D6E70;
   border: 1px solid #fff;
   content: "";
   color: #fff;
@@ -662,17 +662,17 @@ a:active {
 
 .dropdown-toggle:after {
   content: "\f078";
-  font-size: 14px;
+  font-size: 12px;
   line-height: 27px;
   position: relative;
-  top: 0;
-  left: 1px;
+  top: 2px;
+  left: 0px;
   width: 27px;
 }
 
 .dropdown-toggle:hover,
 .dropdown-toggle:focus {
-  background-color: #fff;
+  background-color: #6D6E70;
   color: #000;
 }
 
@@ -794,13 +794,14 @@ a:active {
 
   /* Add an outline to the drop-down menus */
   .main-navigation ul ul {
-    outline: 1px solid #333;
+    outline: 1px solid #fff;
   }
 
   /* Left-align drop-down menu items */
   .main-navigation li li {
     display: block;
     text-align: left;
+    background-color: #FDBC10;
   }
 
   .main-navigation a,
@@ -814,7 +815,7 @@ a:active {
     background: transparent;
     color: #fff;
     text-decoration: underline;
-    outline: solid 1px #b3b3b3;
+    border-bottom: : solid 1px #b3b3b3;
   }
 
   /* Create hover and focus contrast on drop-down items */
@@ -846,8 +847,8 @@ a:active {
 
   /* Simplify the drop-down toggle */
   .dropdown-toggle {
-    top: 11px;
-    right: 12px;
+    top: 21px;
+    right: 25px;
     border: none;
   }
 
