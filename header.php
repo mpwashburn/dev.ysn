@@ -26,7 +26,7 @@
 	<header id="masthead" class="site-header" role="banner">
 
             <?php // Display site icon or first letter as logo ?>
-                <div class="site-logo">
+                <div hidden class="site-logo">
                     <?php $site_title = get_bloginfo( 'name' ); ?>
                     <a href="<?php echo esc_url(home_url( '/' ) ); ?>" rel="home">
                         <div class="screen-reader-text">
