@@ -114,8 +114,8 @@ function ysn_scripts() {
 //        Add homepage styling
         wp_enqueue_style( 'ysn-style-frontpage', get_template_directory_uri() . '/layouts/content-frontpage.css' );
 
-/**        Add Google Fonts: Fira Sans and Merrieweather */
-        wp_enqueue_style( 'ysn-google-fonts', 'https://fonts.googleapis.com/css?family=Fira+Sans:300,300i,400,400i,700,700i|Lato:400,400i,700,700i');
+/**        Add Google Fonts: Lato */
+        wp_enqueue_style( 'ysn-google-fonts', 'https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i');
 
 /*        Add Google Fonts Local: Fira Sans and Merriweather */
         wp_enqueue_style( 'ysn-local-fonts', get_template_directory_uri() . '/fonts/custom-fonts.css' );
