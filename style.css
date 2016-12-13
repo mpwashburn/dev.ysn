@@ -56,10 +56,14 @@ html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust:     100%;
+
 }
 
 body {
   margin: 0;
+
+
+
 }
 
 article,
@@ -120,11 +124,16 @@ dfn {
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
+  color: #F15B28;
+}
+
+h5 {
+  color: #F5831F;
 }
 
 mark {
   background: #ff0;
-  color: #000;
+  color: #444444;
 }
 
 small {
@@ -161,7 +170,10 @@ figure {
 
 hr {
   box-sizing: content-box;
-  height: 0;
+  background-color: #444444;
+  border: 0;
+  height: 1px;
+  margin-bottom: 1.5em;
 }
 
 pre {
@@ -277,7 +289,7 @@ button,
 input,
 select,
 textarea {
-  color: #000;
+  color: #444444;
   font-family: 'Lato', sans-serif;
   font-size: 16px;
   font-size: 1rem;
@@ -287,6 +299,10 @@ textarea {
 .site-content {
   font-size: 1.125em;
   line-height: 1.6em;
+  min-height: 48.13em;
+  margin-bottom: -2em;
+
+
 }
 
 h1,
@@ -295,7 +311,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Fira Sans', sans-serif;
+  font-family:'Lato', sans-serif;
   clear: both;
   line-height: 1.3em;
   margin-top: 2.5rem;
@@ -307,7 +323,7 @@ h2 { font-size: 2.2em; }
 h3 { font-size: 2em; }
 h4 { font-size: 1.8em; }
 h5 { font-size: 1.6em; }
-h6 { font-size: 1.4em; }
+h6 { font-size: 1.25em; }
 
 
 p {
@@ -411,7 +427,8 @@ blockquote::before {
 }
 
 hr {
-  background-color: #ccc;
+  /*background-color: #ccc;*/
+  background-color: #444444;
   border: 0;
   height: 1px;
   margin-bottom: 1.5em;
@@ -457,16 +474,19 @@ table {
 /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/
+label {
+  color: #444444;
+}
 button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-  border: 3px solid;
-  border-color: #000;
+  border: 1px solid;
+  border-color: #444444;
   border-radius: 0;
   background: #fff;
-  color: #000;
-  font-family: 'Fira Sans', sans-serif;
+  color: #444444;
+  font-family:'Lato', sans-serif;
   font-size: 12px;
   font-size: 0.75rem;
   line-height: 1;
@@ -477,8 +497,8 @@ button:hover,
 input[type="button"]:hover,
 input[type="reset"]:hover,
 input[type="submit"]:hover {
-  border-color: #000;
-  color: #fff;
+  border-color: #4BBFAF;
+  color: ##4BBFAF;
 }
 
 button:focus,
@@ -489,8 +509,8 @@ button:active,
 input[type="button"]:active,
 input[type="reset"]:active,
 input[type="submit"]:active {
-  border-color: #000;
-  color: #fff;
+  border-color: #4BBFAF;
+  color: #4BBFAF;
 }
 
 input[type="text"],
@@ -499,9 +519,9 @@ input[type="url"],
 input[type="password"],
 input[type="search"],
 textarea {
-  color: #666;
-  border: 1px solid #ccc;
-  border-radius: 3px;
+  color: #444444;
+  border: 1px solid #444444;
+  border-radius: 0;
 }
 
 input[type="text"]:focus,
@@ -519,11 +539,16 @@ input[type="url"],
 input[type="password"],
 input[type="search"] {
   padding: 3px;
+  width: 100%;
 }
 
 textarea {
   padding-left: 3px;
   width: 100%;
+}
+
+.infusion-form {
+  margin: 0 6.5em;
 }
 
 /*--------------------------------------------------------------
@@ -533,17 +558,17 @@ textarea {
 ## Links
 --------------------------------------------------------------*/
 a {
-  color: #000;
+  color: #444444;
 }
 
 a:visited {
-  color: #000;
+  color: #444444;
 }
 
 a:hover,
 a:focus,
 a:active {
-  color: #000;
+  color: #444444;
 }
 
 a:focus {
@@ -562,7 +587,7 @@ a:active {
   clear: both;
   display: block;
   width: 100%;
-  font-family: 'Fira Sans', sans-serif;
+  font-family:'Lato', sans-serif;
   font-weight: 300;
   font-size: .875em;
   margin-right: 1em;
@@ -587,19 +612,21 @@ a:active {
 .main-navigation a {
   position: relative;
   display: block;
-  padding: 2em 1em 0 1em;
+  padding: .5em 1em 0 1em;
   /*original*/
   /*padding: 0.8em 1em;*/
-  font-weight: 400;
+  font-weight: 300;
   text-decoration: none;
   line-height: 1.6em;
   color: white;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
 .main-navigation a:hover,
 .main-navigation a:focus {
-  background: #fff;
-  color: #000;
+  background: #FDBC10;
+  color: #FDBC10;
 }
 
 .main-navigation a,
@@ -645,15 +672,15 @@ a:active {
 .dropdown-toggle {
   position: absolute;
   height: 27px;
-  width: 27px;
-  top: 12px;
-  right: 6px;
+  width: 19px;
+  top: 21px;
+  right: 25px;
   -webkit-box-sizing: content-box;
   -moz-box-sizing: content-box;
   box-sizing: content-box;
   padding: 0;
   font-family: 'FontAwesome';
-  background-color: #000;
+  background-color: #6D6E70;
   border: 1px solid #fff;
   content: "";
   color: #fff;
@@ -662,18 +689,18 @@ a:active {
 
 .dropdown-toggle:after {
   content: "\f078";
-  font-size: 14px;
+  font-size: 12px;
   line-height: 27px;
   position: relative;
-  top: 0;
-  left: 1px;
+  top: 2px;
+  left: 0px;
   width: 27px;
 }
 
 .dropdown-toggle:hover,
 .dropdown-toggle:focus {
-  background-color: #fff;
-  color: #000;
+  background-color: #6D6E70;
+  color: #444444;
 }
 
 .dropdown-toggle.toggle-on:after {
@@ -693,7 +720,7 @@ a:active {
   left: 1em;
   font-size: 1em;
   text-transform: uppercase;
-  background-color: #FDBC10;
+  background-color: #F5831F;
   color: #fff;
   border: solid 2px #fff;
   transition: all ease-out 400ms;
@@ -735,8 +762,8 @@ a:active {
 
 .nav-menu {
   padding: 1em;
-  margin-bottom: 3em;
-  background-color: #FDBC10;
+  margin: 2.25em 0 0 0;
+  background-color: #F5831F;
   text-align: right;
 }
 
@@ -765,13 +792,13 @@ a:active {
     max-width: 58em;
     margin: 0 auto;
     padding: 0 3.5em;
-    background-color: #000;
+    background-color: #444444;
     /*background-color: hsla(0, 0%, 0%, .7);*/
     background-color: transparent;
   }
 
   .nav-menu {
-    padding: .3em 0 0 0;
+    padding: 1.4em 0 0 0;
     background-color: transparent;
   }
 
@@ -794,13 +821,14 @@ a:active {
 
   /* Add an outline to the drop-down menus */
   .main-navigation ul ul {
-    outline: 1px solid #333;
+    outline: 1px solid #fff;
   }
 
   /* Left-align drop-down menu items */
   .main-navigation li li {
     display: block;
     text-align: left;
+    background-color: #FDBC10;
   }
 
   .main-navigation a,
@@ -814,14 +842,14 @@ a:active {
     background: transparent;
     color: #fff;
     text-decoration: underline;
-    outline: solid 1px #b3b3b3;
+    border-bottom: : solid 1px #b3b3b3;
   }
 
   /* Create hover and focus contrast on drop-down items */
   .main-navigation li li a:hover,
   .main-navigation li li a:focus {
     background: #eee;
-    color: #000;
+    color: #444444;
     text-decoration: none;
   }
 
@@ -832,7 +860,7 @@ a:active {
     display: block;
     z-index: 10;
     margin-left: 0;
-    background: #000;
+    background: #444444;
   }
 
   .main-navigation ul ul ul.toggled-on {
@@ -846,8 +874,8 @@ a:active {
 
   /* Simplify the drop-down toggle */
   .dropdown-toggle {
-    top: 11px;
-    right: 12px;
+    top: 21px;
+    right: 25px;
     border: none;
   }
 
@@ -866,7 +894,7 @@ a:active {
 .post-navigation,
 .paging-navigation {
   padding: 2em 0;
-  font-family: "Fira Sans", sans-serif;
+  font-family: "Lato", sans-serif;
   text-align: left;
   overflow: hidden;
 }
@@ -892,7 +920,7 @@ a:active {
   width: 100%;
   text-decoration: none;
   padding: 1em;
-  border: 1px solid #c3c3c3;
+  border: 1px solid #444444;
 }
 
 .comment-navigation a:hover,
@@ -901,7 +929,7 @@ a:active {
 .post-navigation a:focus,
 .paging-navigation a:hover,
 .paging-navigation a:focus {
-  border-color: #000;
+  border-color: #444444;
 }
 
 
@@ -1018,7 +1046,7 @@ a:active {
   text-decoration: none;
   top: 5px;
   width: auto;
-  z-index: 100000; /* Above WP toolbar. */
+  z-index: 144444400; /* Above WP toolbar. */
 }
 
 /* Do not show the outline on the skip link target. */
@@ -1083,7 +1111,8 @@ a:active {
 .site-header {
   background-color: #6D6E70;
   background-size: cover;
-  max-height: 3.33333333em;
+  height: 5.3125em;
+  margin-bottom: -2em;
 }
 
 /*@media screen and (min-width: 50em) {
@@ -1116,7 +1145,7 @@ a:active {
 }
 
 .site-firstletter {
-  font-family: 'Fira Sans', sans-serif;
+  font-family:'Lato', sans-serif;
   font-size: 1.5em;
   font-weight: 700;
   text-align: center;
@@ -1135,7 +1164,7 @@ a:active {
 
 .site-title {
   margin: 1.7em 1em 0;
-  font-family: 'Fira Sans', sans-serif;
+  font-family:'Lato', sans-serif;
   font-size: 2.4em;
   font-weight: bold;
   line-height: 1.3em;
@@ -1181,23 +1210,53 @@ a:active {
 .site-footer {
   background-color: #6D6E70;
   background-size: cover;
-  min-height: 9.333333em;
+  min-height: 6.333333em;
   color: #fff;
   margin-top: 4.5em;
+  margin-right: 200px;
+  width: 100%;
 }
 
 .site-footer a {
     color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+}
+
+.site-footer p {
+  margin: 0;
+}
+
+.site-info {
+  margin-right: 200px;
+  width: 100%;
 }
 
 .content-footer {
+    text-align: right;
+    width: 100%;
+    float: left;
+    padding: 1em 5em 1em 1em;
+    height: 19.5em;
+}
+
+@media only screen and (max-width: 960px) {
+  .content-footer {
     text-align: center;
-    /*width: 33%;*/
-    display: inline-block;
+    padding-right: 0;
+  }
 }
 
 .content-footer a {
     padding: .27777778em;
+}
+
+.social-icons {
+  margin-bottom: 18px;
+}
+
+.footer-contact-1 {
+
 }
 
 .footer-bottom {
@@ -1211,6 +1270,26 @@ a:active {
     font-size: 75%;
     color: #fff;
 }
+
+
+
+/*@media screen and (min-width: 640px) {
+    .col-1, .col-2 {
+        display: inline-block;
+        width: 49%;
+    }
+
+    .col-3 {
+        display: block;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 300px ) {
+    .col-1, .col-2, .col-3 {
+        width: 100%;
+    }
+}*/
 /*--------------------------------------------------------------
 # Widgets
 --------------------------------------------------------------*/
@@ -1252,7 +1331,7 @@ a:active {
 .widget ol {
 	padding: .7em 0 0;
 	margin: 0;
-	font-family: "Fira Sans", sans-serif;
+	font-family: "Lato", sans-serif;
 	list-style-type: none;
 }
 
@@ -1323,7 +1402,7 @@ a:active {
 .widget_nav_menu a{
 	display: block;
 	padding: 1em 0;
-	border-bottom: 1px solid #c3c3c3;
+	border-bottom: 1px solid #444444;
 }
 
 .site-content .widget_pages li,
@@ -1372,14 +1451,14 @@ a:active {
 	box-sizing: border-box;
 	width: 100%;
 	padding: .5em 1em;
-	border: 1px solid #c3c3c3;
+	border: 1px solid #444444;
 	border-radius: 0;
 }
 
 /* Calendar widget */
 
 .widget_calendar {
-	font-family: "Fira Sans", sans-serif;
+	font-family: "Lato", sans-serif;
 }
 
 .widget_calendar caption {
@@ -1435,7 +1514,7 @@ a:active {
 	position: relative;
 	padding: 0 0 1em 70px;
 	margin-bottom: 2em;
-	border-bottom: 1px solid #c3c3c3;
+	border-bottom: 1px solid #444444;
 }
 
 .widget_ysn_recent_comments li:last-child,
@@ -1506,7 +1585,7 @@ a:active {
 
 .widget_ysn_recent_comments a:hover .original-title,
 .widget_ysn_recent_comments a:focus .original-title {
-	color: #000;
+	color: #444444;
 	text-decoration: underline;
 }
 
@@ -1610,7 +1689,7 @@ a:active {
 		width: 33%;
 		margin: 4em auto;
 		content: "";
-		border-bottom: 1px solid #c3c3c3;
+		border-bottom: 1px solid #444444;
 	}
 
 
@@ -1642,20 +1721,6 @@ a:active {
   }
 }
 
-.page-title {
-    text-align: center;
-    font-style: italic;
-    font-size: 1.4em;
-}
-
-.page-header::after {
-    display: block;
-    content: "";
-    width: 3.5em;
-    border-bottom: 1px solid #c3c3c3;
-    margin: 2em auto;
-}
-
 /*--------------------------------------------------------------
 ## Indexes
 --------------------------------------------------------------*/
@@ -1669,13 +1734,13 @@ a:active {
     display: block;
     content: "";
     width: 3.5em;
-    border-bottom: 1px solid #c3c3c3;
+    border-bottom: 1px solid #444444;
     margin: 2em auto;
 }
 
 .archive-description {
     margin-top: 1.5em;
-    border: 1px solid #c3c3c3;
+    border: 1px solid #444444;
     padding: .5em 1.8em 0;
     text-align: center;
     font-style: italic;
@@ -1697,12 +1762,13 @@ a:active {
 
 @media screen and (min-width: 30em) {
     .entry-title.index-excerpt {
-        margin-top: 0.5em;/*changed from 1.5em*/
+        margin-top: 1.5em;
         font-size: 2em;
     }
 
     .index-entry-meta {
         font-size: 1em;
+        text-align: center;
     }
 
     .index-entry-meta .byline,
@@ -1718,37 +1784,39 @@ a:active {
     }
 }
 
-.continue-reading {
+.continue-reading, .learn-more {
     text-align: center;
 }
 
 .continue-reading a,
-.entry-content .continue-reading a {
+.entry-content .continue-reading a, .learn-more a {
     display: inline-block;
     margin: 1em auto;
     padding: 1em 2em;
-    font-family: "Fira Sans", sans-serif;
+    font-family: "Lato", sans-serif;
     text-decoration: none;
-    border: 1px solid #c3c3c3;
+    border: 1px solid #444444;
 }
-
+.learn-more a:hover,
+.learn-more a:focus,
 .continue-reading a:hover,
 .continue-reading a:focus,
 .entry-content .continue-reading a:hover,
 .entry-content .continue-reading a:focus {
-    border-color: #000;
+    border-color: #4BBFAF;
+    color: #4BBFAF;
     border-width: 1px;
     box-shadow: none;
 }
 
 .continue-reading a::after {
-    content: "…"
+    content: ""
 }
 .continue-reading::after {
     display: block;
     content: "";
     width: 7em;
-    border-bottom: 1px solid #c3c3c3;
+    border-bottom: 1px solid #F15B28;
     margin: 4em auto 0;
 }
 
@@ -1782,15 +1850,15 @@ a:active {
 .entry-summary a,
 .entry-summary a {
   text-decoration: none;
-  border-bottom: 2px solid #c3c3c3;
+  border-bottom: 1px solid #444444;
 }
 
 .entry-content a:hover,
 .entry-content a:focus,
 .entry-summary a:hover,
 .entry-summary a:focus {
-  border-bottom: 3px solid #c3c3c3;
-  box-shadow: inset 0 -3px 0 #c3c3c3;
+  border-bottom: 3px solid #444444;
+  box-shadow: inset 0 -3px 0 #444444;
 }
 
 .entry-meta a,
@@ -1830,18 +1898,22 @@ a:active {
 }
 
 .entry-title {
-  margin-top: 0.5em;/*changed from 2em*/
-  margin-bottom: 1em;
+  margin-top: 2em;
+  margin-bottom: .25em;
   font-size: 2em;
   line-height: 1.3em;
   text-align: center;
-  color: #000;
+  /*color: #444444;*/
   word-wrap: break-word; /* Catch and wrap very long words on small screens */
+}
+
+.entry-title h1 {
+  color: #F15B28;
 }
 
 @media screen and (min-width: 40em) {
   .entry-title {
-    margin-top: 0.5em;/*changed from 1.5em*/
+    margin-top: 1em;
     font-size: 2.8em;
     line-height: 1.3em;
   }
@@ -1873,7 +1945,7 @@ a:active {
 .entry-meta {
   margin: 0 -1.473684210526316em;
   padding: 2em 1.473684210526316em;
-  font-family: "Fira Sans", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 95%;
   font-style: italic;
   text-align: center;
@@ -1980,18 +2052,17 @@ a:active {
 
   .deck,
   .entry-content {
-    padding: 5em 3em 0; /*changed from 0 3em*/
-    padding-top: 5em; /*added*/
+    padding: 0 3em;
   }
 }
 
 .entry-footer::before,
 .entry-footer::after {
-/*  display: block;
+  display: block;
   content: "";
   width: 7em;
-  border-bottom: 1px solid #c3c3c3;
-  margin: 2em auto;*/
+  border-bottom: 1px solid #444444;
+  margin: 2em auto;
 }
 
 .entry-footer::before {
@@ -1999,13 +2070,10 @@ a:active {
 }
 
 .entry-footer {
-  font-family: "Fira Sans", sans-serif;
-  font-size: 75%;
-  /*font-style: italic;*/
+  font-family: "Lato", sans-serif;
+  font-size: 95%;
+  font-style: italic;
   text-align: center;
-  height: 9.333333em;
-  /*aligns divs at top*/
-  vertical-align: top;
 }
 
 @media screen and (min-width: 40em) {
@@ -2031,48 +2099,42 @@ a:active {
 .entry-footer span a {
   font-weight: 700;
   text-decoration: none;
-  color: #000;
+  color: #444444;
 }
 
-@media screen and (min-width: 640px) {
-    .col-1, .col-2 {
-        display: inline-block;
-        width: 49%;
-    }
-    
-    .col-3 {
-        display: block;
-        width: 100%;
-    }
-}
-
-@media screen and (min-width: 300px ) {
-    .col-1, .col-2, .col-3 {
-        width: 100%;
-    }
-}
-
-/*Adding in styleing to page template*/
 .title-background {
+  border-bottom: 1px solid #444444;
+}
+/*Adding in styleing to page template*/
+/*.title-background {
     position: absolute;
     left: 1em;
     right: 1em;
     height: 100px;
     background-color: rgba(241, 91, 40, .75);
     margin-top: -1em;
-}
+}*/
 
 /*--------------------------------------------------------------
 ## Front-Page
 --------------------------------------------------------------*/
 .ysn-logo {
-    margin-bottom: 2.22222222222222em;
+    margin-bottom: 1.22222222222222em;
     text-align: center;
 }
 
+.ysn-logo h3 {
+  margin-top: .5em;
+  color: #444444;
+}
+
 .ysn-copy {
-    margin-bottom: 4.44444444444444em;
     text-align: center;
+}
+
+.frontpage-hr {
+  margin: 0;
+  background-color: #F15B28;
 }
 
 cta-card a {
@@ -2090,26 +2152,26 @@ cta-card a {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    max-width: 19.444em;
-    min-height: 11.111em;
-    background-image: url(http://placehold.it/180x180);
+    max-width: 45em;
+    min-height: 15em;
+    background-image: url(<?php bloginfo('template_directory'); ?>/images/YSN_EYP_Banner_01 2a.png">);
 }
 
 /*@media all and (min-width: 822px) {
     .cta-card {
         display: inline-block;
     }
-    
+
     .cta-card-1 {
         min-width: 49%;
         float: left;
-        
- 
+
+
     }
     .cta-card-2 {
         min-width: 49%;
         float: right;
-    
+
     }
 }*/
 
@@ -2151,14 +2213,14 @@ cta-card a {
 }
 
 .comment-body {
-	border-bottom: 1px solid #c3c3c3;
+	border-bottom: 1px solid #444444;
 	margin-bottom: 3em;
 }
 
 .comment-meta {
 	position: relative;
 	margin-left: 70px;
-	font-family: "Fira Sans", sans-serif;
+	font-family: "Lato", sans-serif;
 	font-style: italic;
 	font-size: 80%;
 }
@@ -2236,12 +2298,12 @@ cta-card a {
 
 .comment-meta a:hover,
 .comment-meta a:focus {
-	border-bottom: 2px solid #000;
+	border-bottom: 2px solid #444444;
 }
 
 .comment-metadata a:hover,
 .comment-metadata a:focus {
-	border-color: #c3c3c3;
+	border-color: #444444;
 }
 
 .comment-author {
@@ -2272,19 +2334,19 @@ cta-card a {
 .reply a {
 	display: inline-block;
 	padding: .5em 1.4em;
-	font-family: "Fira Sans", sans-serif;
+	font-family: "Lato", sans-serif;
 	font-size: 85%;
 	color: #333;
 	line-height: 1.3em;
 	text-decoration: none;
-	border: 1px solid #c3c3c3;
+	border: 1px solid #444444;
 }
 
 .reply a:hover,
 .reply a:focus {
-	background: #000;
+	background: #444444;
 	color: #fff;
-	border-color: #000;
+	border-color: #444444;
 }
 
 .comment-content ol {
@@ -2297,7 +2359,7 @@ cta-card a {
 
 .bypostauthor .avatar {
 	box-sizing: content-box;
-	border: 5px solid #c3c3c3;
+	border: 5px solid #444444;
 	margin-top: -5px;
 	margin-left: -5px;
 }
@@ -2309,7 +2371,7 @@ cta-card a {
 	margin: 2em auto 4em;
 	content: "";
 	width: 5em;
-	border-bottom: 1px solid #c3c3c3;
+	border-bottom: 1px solid #444444;
 }
 
 .comment-reply-title {
@@ -2322,7 +2384,7 @@ cta-card a {
 }
 
 .comment-form {
-	font-family: "Fira Sans", sans-serif;
+	font-family: "Lato", sans-serif;
 	line-height: 1.3em;
 }
 
@@ -2340,14 +2402,14 @@ cta-card a {
     color: #333;
     line-height: 1.3em;
     text-decoration: none;
-    border: 1px solid #c3c3c3;
+    border: 1px solid #444444;
 }
 
 .comment-form .form-submit input:hover,
 .comment-form .form-submit input:focus {
-	border-color: #000;
+	border-color: #444444;
 	color: #fff;
-	background-color: #000;
+	background-color: #444444;
 }
 
 .comment-form label {
@@ -2400,7 +2462,7 @@ object {
 ## Captions
 --------------------------------------------------------------*/
 .wp-caption {
-  font-family: "Fira Sans", sans-serif;
+  font-family: "Lato", sans-serif;
   font-style: italic;
   max-width: 100%;
 }
@@ -2433,8 +2495,8 @@ object {
   padding: 0 1em .5em;
   font-size: 90%;
   color: #333;
-  border-right: 1px solid #c3c3c3;
-  border-bottom: 1px solid #c3c3c3;
+  border-right: 1px solid #444444;
+  border-bottom: 1px solid #444444;
 }
 
 .wp-caption-text::before {
@@ -2494,12 +2556,13 @@ img.alignleft {
 
     img.alignright,
     .wp-caption.alignright {
-	margin-right: -1.5em;
+	margin-right: 0; /*was -1.5em*/
     }
 
     img.alignleft,
     .wp-caption.alignleft {
-	margin-left: -1.5em;
+	/*margin-left: -1.5em;*/
+        margin-left: 0;
     }
 
     .centered-image {
@@ -2513,11 +2576,11 @@ img.alignleft {
 @media screen and (min-width: 74em) {
     img.alignright,
     .wp-caption.alignright {
-	margin-right: -3em;
+	margin-right: 0; /*was -3em*/
     }
     img.alignleft,
     .wp-caption.alignleft {
-	margin-left: -3em;
+	margin-left: 0em; /*changed from -3em*/
     }
 }
 
@@ -2585,7 +2648,7 @@ img.alignleft {
 
 .gallery-item a:hover img,
 .gallery-item a:focus img {
-  border-color: #c3c3c3;
+  border-color: #444444;
 }
 
 .gallery-columns-2 .gallery-item {
@@ -2624,7 +2687,7 @@ img.alignleft {
 .gallery-caption {
   display: block;
   margin: 0;
-  font-family: "Fira Sans", sans-serif;
+  font-family: "Lato", sans-serif;
   border: none;
 }
 

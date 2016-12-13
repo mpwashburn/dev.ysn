@@ -1,22 +1,30 @@
 <div id="primary" class="content-area">
     <main id="main" class="site-main" role="main">
 
-	<div class="ysn-logo">
-            <img class=" img-responsive" src="<?php bloginfo('template_directory'); ?>/images/YSN_Logo_2015_100x100-02.png">
+	   <div class="ysn-logo">
+            <img class=" img-responsive" src="<?php bloginfo('template_directory'); ?>/images/YSN_LogoSignature-01.png">
+            <h3>YSN is dramatically changing the conversation about work for the next generation.</h3>
         </div>
+
+        <hr class="frontpage-hr">
 
         <div class="ysn-copy">
-            <p>We are a digital content platform whose mission is to illuminate the new world of opportunity for the next-generation global workforce. With our online training courses, seminars, New York Times best-selling book, and much more, we guide young people all over the world through the process of making today’s new work possibilities a reality using practical advice and best practices.</p>
+            <p>
+            Everything we do helps inspire people to discover who they are, follow their passions, find work they enjoy, launch businesses, and sculpt careers based on what matters to them most.
+            </p>
         </div>
 
-        
-            <div class="cta-card">
-                <a href="#">
-                    <h5>Exploring Your Potential</h5>
-                    <h6>Debitis lucilius conclusionemque</h6> 
-                </a>
-            </div>
-      
+
+        <div class="cta-card">
+            <a href="http://exploringyourpotential.com/" target="_blank">
+                <img class=" img-responsive" src="<?php bloginfo('template_directory'); ?>/images/EYP_Banner_01_2a.png">
+            </a>
+        </div>
+        <div class="learn-more">
+            <a href="http://exploringyourpotential.com" rel="bookmark" target="_blank">Learn More
+                 <span class="screen-reader-text">"Exploring Your Potential"</span>            </a>
+        </div>
+
 
     </main><!-- #main -->
 </div><!-- #primary -->
