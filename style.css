@@ -929,7 +929,8 @@ a:active {
 .post-navigation a:focus,
 .paging-navigation a:hover,
 .paging-navigation a:focus {
-  border-color: #444444;
+  border-color: #4BBFAF;
+  color: #4BBFAF;
 }
 
 
@@ -1213,11 +1214,11 @@ a:active {
   min-height: 6.333333em;
   color: #fff;
   margin-top: 4.5em;
-  margin-right: 200px;
+  /*margin-right: 200px;*/
   width: 100%;
 }
 
-.site-footer a {
+.site-footer a  {
     color: #fff;
     font-family: 'Lato', sans-serif;
     font-weight: 300;
@@ -1225,6 +1226,9 @@ a:active {
 
 .site-footer p {
   margin: 0;
+  color: #fff;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
 }
 
 .site-info {
