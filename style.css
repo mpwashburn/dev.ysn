@@ -1228,7 +1228,7 @@ a:active {
 }
 
 .site-info {
-  margin-right: 200px;
+  /*margin-right: 200px;*/
   width: 100%;
 }
 
@@ -1236,14 +1236,17 @@ a:active {
     text-align: right;
     width: 100%;
     float: left;
-    padding: 1em 5em 1em 1em;
-    height: 19.5em;
+    padding: 1em 5em 0em 1em;
+    /*height: 19.5em;*/
 }
 
 @media only screen and (max-width: 960px) {
   .content-footer {
     text-align: center;
     padding-right: 0;
+  }
+  .footer-bottom {
+    margin-top: 2em;
   }
 }
 
@@ -1256,20 +1259,25 @@ a:active {
 }
 
 .footer-contact-1 {
+  margin-top: 4em;
+}
 
+.footer-contact-2 {
+  margin-top: 1.75em;
 }
 
 .footer-bottom {
-    background-color: #6D6E70;
+    text-align: center;
+    font-size: 75%;
 }
 
-.footer-bottom p {
+/*.footer-bottom p {
     margin: 0;
     padding: 0;
     text-align: center;
     font-size: 75%;
     color: #fff;
-}
+}*/
 
 
 
