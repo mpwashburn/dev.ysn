@@ -20,7 +20,7 @@
                 <img class=" img-responsive" src="<?php bloginfo('template_directory'); ?>/images/EYP_Banner_01_2a.png">
             </a>
         </div>
-        <div class="continue-reading learn-more">
+        <div class="learn-more">
             <a href="http://exploringyourpotential.com" rel="bookmark" target="_blank">Learn More
                  <span class="screen-reader-text">"Exploring Your Potential"</span>            </a>
         </div>
